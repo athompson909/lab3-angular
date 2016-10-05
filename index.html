@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Utilities</title>
+  <link rel="stylesheet" href="main.css"/>
+  <script type="javascript" src="script.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body>
+  <div id="header">
+  </div>
+
+  <div ng-class='{ show: visible, left: alignment === \"left\", right: alignment === \"right\" }' ng-transclude></div>
+
+  <div id="body-divs">
+    <menu id="sidebar_menu" visible="visible" alignment="left">
+      <menu-item hash="stop-watch">X</menu-item>
+      <menu-item hash="world-clock">Y</menu-item>
+      <menu-item hash="calculator">Z</menu-item>
+    </menu>
+    <!--<div id="sidebar">
+    </div>-->
+    <div id="background">
+      <div id="main">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
