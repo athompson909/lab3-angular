@@ -19,22 +19,22 @@ input, button:focus, button:active, button.active, button:focus:active {
 
 #background {
   height: auto;
-  min-height: 5000px;
-  margin-right: 40px;
+  min-height: 1000px;
   position: relative;
   background-color: #ffffff;
 }
 
+/*
 #sidebar {
   height: auto;
-  min-height: 5000px;
+  min-height: 1000px;
   width: 40px;
   float: right;
   z-index: 1;
   box-shadow: -2px 0px 8px 0px #828081;
   position: relative;
   background-color: #004d99;
-}
+}*/
 
 #main {
   margin: 0 auto;
