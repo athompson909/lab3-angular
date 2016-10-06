@@ -1,19 +1,34 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Utilities</title>
-  <link rel="stylesheet" href="main.css"/>
-  <script type="javascript" src="script.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+<script src="script.js"></script>
+<link rel="stylesheet" href="main.css">
+<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 <body>
-    <div id="background">
-      <header id='header'>
-        <h1>UTILITIES</h1>
-      </header>
-      <div id="main">
-      </div>
+<div ng-app="myApp">
+
+  <div id="background">
+    <div id="header"></div>
+    <div id="main">
+
+        <div id="calc" ng-controller="calculator">
+          <div id="both">
+            <div id="inputBar">{{inputBar}}</div>
+            <div id="minus_button"><button>-</button></div>
+          </div>
+          <button ng-click='onClick6()'>6</button><button ng-click='onClick5()'>5</button><button ng-click='onClick4()'>4</button><button>x</button>
+          <br>
+          <button ng-click='onClick3()'>3</button><button ng-click='onClick2()'>2</button><button ng-click='onClick1()'>1</button><button>-</button>
+          <br>
+          <button>C</button><button ng-click='onClick0()'>0</button><button>+/-</button><button>+</button>
+          <br>
+        </div>
+
     </div>
+  </div>
+
+</div>
+
 </body>
 </html>
