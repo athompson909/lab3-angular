@@ -95,6 +95,7 @@ app.controller('calculator', function($scope) {
   };
   $scope.onClickClear = function() {
     $scope.inputBar = '0';
+    $scope.tempDefault = '0';
   }
 
 });
