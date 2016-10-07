@@ -91,6 +91,6 @@ input, button:focus, button:active, button.active, button:focus:active {
   background-color: #99ccff;
 }
 
-#minus_button {
+#side_button {
   display: table-cell;
 }
