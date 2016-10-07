@@ -1,10 +1,58 @@
 body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #1d2731;
   margin: 0;
   padding: 0;
+  background-color: #efefef;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
 }
 
 #header {
-  height: 120px;
+  margin: 60px;
+}
+
+#header h1 {
+  color: #0b3c5d;
+  font-size: 72px;
+  margin-left: 200px;
+}
+
+#header nav {
+  background-color: #d9b310;
+  width: 100%;
+  padding-top:20px;
+  padding-bottom: 12px;
+  box-shadow: -2px 0px 8px 0px #828081;
+}
+
+#header a {
+  color: #1d2731;
+  font-size: 32px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top:20px;
+  padding-bottom: 12px;
+}
+
+#header a:hover {
+  background-color: #e0c23f
+;
 }
 
 input, button:focus, button:active, button.active, button:focus:active {
@@ -21,7 +69,6 @@ input, button:focus, button:active, button.active, button:focus:active {
   height: auto;
   min-height: 1000px;
   position: relative;
-  background-color: #ffffff;
 }
 
 /*
@@ -40,9 +87,16 @@ input, button:focus, button:active, button.active, button:focus:active {
   margin: 0 auto;
   width: 70%;
   position: relative;
-  border: 1px solid #828081;
   height: auto;
   min-height: 1000px;
+  background-color: #ffffff;
+  box-shadow: -2px 0px 8px 0px #828081;
+}
+
+#main p {
+  padding-top: 60px;
+  padding-left: 40px;
+  font-size: 32px;
 }
 
 #calc {
@@ -93,4 +147,9 @@ input, button:focus, button:active, button.active, button:focus:active {
 
 #side_button {
   display: table-cell;
+}
+
+#copyright {
+  color: #bfbfbf;
+  margin: 12px 20px 12px 20px;
 }
