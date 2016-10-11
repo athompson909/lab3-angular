@@ -1,0 +1,7 @@
+{
+  "compilerOptions": { "rootDir": ".", "outDir": "../commonjs" },
+  "files": [ 
+    "ng1.ts", 
+    "ng1/legacy/stateEvents.ts"
+  ]
+}
