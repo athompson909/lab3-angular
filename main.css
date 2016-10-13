@@ -100,11 +100,18 @@ input, button:focus, button:active, button.active, button:focus:active {
 }
 
 #calc {
+  margin: 0 auto;
   font-family: 'Orbitron', sans-serif;
   font-size: 22px;
   position: relative;
   padding: 20px;
-  margin: 20px;
+  margin: 40px;
+}
+
+#calc h3 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 48px;
+  padding: 20px;
 }
 
 #calc button {
@@ -152,4 +159,34 @@ input, button:focus, button:active, button.active, button:focus:active {
 #copyright {
   color: #bfbfbf;
   margin: 12px 20px 12px 20px;
+}
+
+#clock{
+
+  padding: 20px;
+  text-align: center;
+  font-size: 300%;
+}
+#title{
+  padding: 20px;
+    text-align: center;
+  font-size: 200%;
+}
+#timeZone{
+  padding:10px;
+    text-align: center;
+    width: 500px;
+}
+#stopw{
+
+    padding: 20px;
+    text-align: center;
+    font-size: 200%;
+}
+#sw{
+    padding:10px;
+    text-align: center;
+}
+#outer{
+    text-align: center;
 }
