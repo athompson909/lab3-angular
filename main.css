@@ -100,11 +100,18 @@ input, button:focus, button:active, button.active, button:focus:active {
 }
 
 #calc {
+  margin: 0 auto;
   font-family: 'Orbitron', sans-serif;
   font-size: 22px;
   position: relative;
   padding: 20px;
-  margin: 20px;
+  margin: 40px;
+}
+
+#calc h3 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 48px;
+  padding: 20px;
 }
 
 #calc button {

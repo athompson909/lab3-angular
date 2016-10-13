@@ -11,22 +11,22 @@
 <body>
 <div ng-app="Utility">
 
+
+
     <div id="background">
         <div id="header">
             <h1>Utilities</h1>
             <nav>
                 <!--these are just example utility names-->
                 <a href="#">Stopwatch</a>
-                <a href="#">World Clock</a>
-                <a href="#">Timer</a>
+                <a href="#/worldclock">World Clock</a>
+                <a href="#/timer">Timer</a>
                 <a href="#/calc">Calculator</a>
-                <a href="#">Dictionary</a>
+                <a href="#/dictionary">Dictionary</a>
                 <a href="#/home">Home</a>
             </nav>
         </div>
         <div id="main">
-
-
 
             <div id="utility"></div>
             <ui-view></ui-view>
@@ -36,40 +36,43 @@
     </div>
     <!--where utilities will be added-->
     <script type="text/ng-template" id="/home.html">
-        <div>
+        <p>
             {{select}}
-        </div>
+        </p>
     </script>
+
     <script type="text/ng-template" id="/stopwatch.html">
         </script>
+
     <script type="text/ng-template" id="/worldclock.html">
-        </script>
+      </script>
+
     <script type="text/ng-template" id="/timer.html">
-        </script>
+    </script>
 
     <script type="text/ng-template" id="/calc.html">
-        <div id="calc">
-            <p>Calculator</p>
-            <div id="both">
-                <div id="inputBar" style='{{inputBarStyle}}' ng-click='onClickClear()' ng-mouseover='askIfClear()' ng-mouseleave='showDefault()'>{{displayInput()}}</div>
-                <div id="side_button">
-                    <button ng-click='divide()'>/</button><br>
-                </div>
-            </div>
-            <button ng-click='onClick9()'>9</button><button ng-click='onClick8()'>8</button><button ng-click='onClick7()'>7</button><button ng-click='times()'>*</button>
-            <br>
-            <button ng-click='onClick6()'>6</button><button ng-click='onClick5()'>5</button><button ng-click='onClick4()'>4</button><button ng-click='minus()'>-</button>
-            <br>
-            <button ng-click='onClick3()'>3</button><button ng-click='onClick2()'>2</button><button ng-click='onClick1()'>1</button><button ng-click='plus()'>+</button>
-            <br>
-            <button ng-click='onClickChangeSign()'>+/-</button><button ng-click='onClick0()'>0</button><button ng-click='onClickDot()'>.</button><button ng-click='equals()'>=</button>
-            <br>
-        </div>
+      <div id="calc">
+        <h3>Calculator</h3>
+          <div id="both">
+              <div id="inputBar" style='{{inputBarStyle}}' ng-click='onClickClear()' ng-mouseover='askIfClear()' ng-mouseleave='showDefault()'>{{displayInput()}}</div>
+              <div id="side_button">
+                  <button ng-click='divide()'>/</button><br>
+              </div>
+          </div>
+          <button ng-click='onClick9()'>9</button><button ng-click='onClick8()'>8</button><button ng-click='onClick7()'>7</button><button ng-click='times()'>*</button>
+          <br>
+          <button ng-click='onClick6()'>6</button><button ng-click='onClick5()'>5</button><button ng-click='onClick4()'>4</button><button ng-click='minus()'>-</button>
+          <br>
+          <button ng-click='onClick3()'>3</button><button ng-click='onClick2()'>2</button><button ng-click='onClick1()'>1</button><button ng-click='plus()'>+</button>
+          <br>
+          <button ng-click='onClickChangeSign()'>+/-</button><button ng-click='onClick0()'>0</button><button ng-click='onClickDot()'>.</button><button ng-click='equals()'>=</button>
+          <br>
+      </div>
     </script>
 
     <script type="text/ng-template" id="/dictionary.html">
-        </script>
-
+      {{dictHeader}}
+      </script>
 
 
 
