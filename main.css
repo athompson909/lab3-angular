@@ -36,23 +36,22 @@ a:active {
 #header nav {
   background-color: #d9b310;
   width: 100%;
-  padding-top:20px;
-  padding-bottom: 12px;
+  padding-top:29px;
+  padding-bottom: 14px;
   box-shadow: -2px 0px 8px 0px #828081;
 }
 
 #header a {
   color: #1d2731;
   font-size: 32px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 84px;
+  padding-right: 84px;
   padding-top:20px;
   padding-bottom: 12px;
 }
 
 #header a:hover {
-  background-color: #e0c23f
-;
+  background-color: #e0c23f;
 }
 
 input, button:focus, button:active, button.active, button:focus:active {
@@ -113,7 +112,7 @@ input, button:focus, button:active, button.active, button:focus:active {
   font-size: 22px;
   position: relative;
   padding: 20px;
-  /*margin: 40px;*/
+  margin: 80px;
 }
 
 h3 {
@@ -167,4 +166,10 @@ h3 {
 #copyright {
   color: #bfbfbf;
   margin: 12px 20px 12px 20px;
+}
+
+#worldclockdiv, #stopwatchdiv {
+  margin: 40px;
+  padding: 40px;
+  font-size: 32px;
 }

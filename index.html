@@ -24,9 +24,9 @@
                 <!--these are just example utility names-->
                 <a href="#/stopwatch">Stopwatch</a>
                 <a href="#/worldclock">World Clock</a>
-                <a href="#/timer">Timer</a>
+                <!--<a href="#/timer">Timer</a>-->
                 <a href="#/calc">Calculator</a>
-                <a href="#/dictionary">Dictionary</a>
+                <!--<a href="#/dictionary">Dictionary</a>-->
                 <a href="#/home">Home</a>
             </nav>
         </div>
@@ -46,22 +46,23 @@
     </script>
 
     <script type="text/ng-template" id="/stopwatch.html">
-
-        <div id="stopw">{{ stopw | date:'HH:mm:ss'}}</div>
-        <div id ="sw">
-        <button id="s/s"ng-click='onClickSW()'class="mdl-button mdl-js-button mdl-button--raised">
-            Start/Stop
-        </button>
-        <button id="rs"ng-click='onClickReset()'class="mdl-button mdl-js-button mdl-button--raised">
-            Reset
-        </button>
+      <div id="stopwatchdiv">
+        <div id="stopw"><p>{{ stopw | date:'HH:mm:ss'}}</p></div>
+            <div id ="sw">
+              <button id="s/s"ng-click='onClickSW()'class="mdl-button mdl-js-button mdl-button--raised">
+                  Start/Stop
+              </button>
+              <button id="rs"ng-click='onClickReset()'class="mdl-button mdl-js-button mdl-button--raised">
+                  Reset
+              </button>
             </div>
-        </script>
+          </div>
+      </script>
 
     <script type="text/ng-template" id="/worldclock.html">
-
-        <div id="clock">{{ clock | date:'HH:mm:ss'}}</div>
-        <div id="title">Time Zone </div>
+      <div id="worldclockdiv">
+        <div id="clock"><p>TIME: {{ clock | date:'HH:mm:ss'}}</p></div>
+        <div id="title"><p>Time Zone </p></div>
         <div id="outer">
         <div id="timeZone">
         <button id="-5"ng-click='onClicktz(0)'class="mdl-button mdl-js-button mdl-button--raised">
@@ -83,7 +84,7 @@
             Provo
         </button>
         <button id="1"ng-click='onClicktz(6)'class="mdl-button mdl-js-button mdl-button--raised">
-            Huston
+            Houston
         </button>
         <button id="2"ng-click='onClicktz(7)'class="mdl-button mdl-js-button mdl-button--raised">
             New York
@@ -101,53 +102,54 @@
             Cape Verde
         </button>
 
-    <button id="7"ng-click='onClicktz(12)'class="mdl-button mdl-js-button mdl-button--raised">
-        London
-    </button>
-    <button id="8"ng-click='onClicktz(13)'class="mdl-button mdl-js-button mdl-button--raised">
-        Rome
-    </button>
-    <button id="9"ng-click='onClicktz(14)'class="mdl-button mdl-js-button mdl-button--raised">
-        Jerusalem
-    </button>
-    <button id="10"ng-click='onClicktz(15)'class="mdl-button mdl-js-button mdl-button--raised">
-        Moscow
-    </button>
-    <button id="11"ng-click='onClicktz(16)'class="mdl-button mdl-js-button mdl-button--raised">
-        Dubi
-    </button>
-    <button id="12"ng-click='onClicktz(17)'class="mdl-button mdl-js-button mdl-button--raised">
-        Pakistan
-    </button>
-    <button id="13"ng-click='onClicktz(18)'class="mdl-button mdl-js-button mdl-button--raised">
-        Bangladesh
-    </button>
-    <button id="14"ng-click='onClicktz(19)'class="mdl-button mdl-js-button mdl-button--raised">
-        Thailand
-    </button>
-    <button id="15"ng-click='onClicktz(20)'class="mdl-button mdl-js-button mdl-button--raised">
-        China
-    </button>
-    <button id="16"ng-click='onClicktz(21)'class="mdl-button mdl-js-button mdl-button--raised">
-        Soul
-    </button>
-    <button id="17"ng-click='onClicktz(22)'class="mdl-button mdl-js-button mdl-button--raised">
-       Sydney
-    </button>
-    <button id="18"ng-click='onClicktz(23)'class="mdl-button mdl-js-button mdl-button--raised">
-        Vanuatu
-    </button>
-    <button id="19"ng-click='onClicktz(24)'class="mdl-button mdl-js-button mdl-button--raised">
-        Fiji
-    </button>
-    <button id="20"ng-click='onClicktz(25)'class="mdl-button mdl-js-button mdl-button--raised">
-        Samoa
-    </button>
-    <button id="21"ng-click='onClicktz(26)'class="mdl-button mdl-js-button mdl-button--raised">
-        Kiribati
-    </button>
+        <button id="7"ng-click='onClicktz(12)'class="mdl-button mdl-js-button mdl-button--raised">
+            London
+        </button>
+        <button id="8"ng-click='onClicktz(13)'class="mdl-button mdl-js-button mdl-button--raised">
+            Rome
+        </button>
+        <button id="9"ng-click='onClicktz(14)'class="mdl-button mdl-js-button mdl-button--raised">
+            Jerusalem
+        </button>
+        <button id="10"ng-click='onClicktz(15)'class="mdl-button mdl-js-button mdl-button--raised">
+            Moscow
+        </button>
+        <button id="11"ng-click='onClicktz(16)'class="mdl-button mdl-js-button mdl-button--raised">
+            Dubai
+        </button>
+        <button id="12"ng-click='onClicktz(17)'class="mdl-button mdl-js-button mdl-button--raised">
+            Pakistan
+        </button>
+        <button id="13"ng-click='onClicktz(18)'class="mdl-button mdl-js-button mdl-button--raised">
+            Bangladesh
+        </button>
+        <button id="14"ng-click='onClicktz(19)'class="mdl-button mdl-js-button mdl-button--raised">
+            Thailand
+        </button>
+        <button id="15"ng-click='onClicktz(20)'class="mdl-button mdl-js-button mdl-button--raised">
+            China
+        </button>
+        <button id="16"ng-click='onClicktz(21)'class="mdl-button mdl-js-button mdl-button--raised">
+            Seoul
+        </button>
+        <button id="17"ng-click='onClicktz(22)'class="mdl-button mdl-js-button mdl-button--raised">
+           Sydney
+        </button>
+        <button id="18"ng-click='onClicktz(23)'class="mdl-button mdl-js-button mdl-button--raised">
+            Vanuatu
+        </button>
+        <button id="19"ng-click='onClicktz(24)'class="mdl-button mdl-js-button mdl-button--raised">
+            Fiji
+        </button>
+        <button id="20"ng-click='onClicktz(25)'class="mdl-button mdl-js-button mdl-button--raised">
+            Samoa
+        </button>
+        <button id="21"ng-click='onClicktz(26)'class="mdl-button mdl-js-button mdl-button--raised">
+            Kiribati
+        </button>
         </div>
         </div>
+      </div>
     </script>
 
     <script type="text/ng-template" id="/timer.html">
